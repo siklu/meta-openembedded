@@ -21,7 +21,7 @@ SECTION = "System Environment/Base"
 
 DEPENDS += "libpam"
 
-inherit features_check
+inherit distro_features_check
 REQUIRED_DISTRO_FEATURES = "pam"
 
 LICENSE = "BSD-1-Clause"

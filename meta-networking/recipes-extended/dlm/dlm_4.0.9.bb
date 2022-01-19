@@ -24,7 +24,7 @@ S = "${WORKDIR}/dlm-dlm-${PV}"
 
 DEPENDS += "corosync"
 
-inherit pkgconfig systemd features_check
+inherit pkgconfig systemd distro_features_check
 
 PACKAGECONFIG ??= ""
 

@@ -23,7 +23,7 @@ UPSTREAM_CHECK_GITTAGREGEX = "(?P<pver>\d+(\.\d+)+)"
 
 S = "${WORKDIR}/git"
 
-inherit features_check
+inherit distro_features_check
 REQUIRED_DISTRO_FEATURES = "systemd"
 
 inherit gettext autotools python3native pkgconfig

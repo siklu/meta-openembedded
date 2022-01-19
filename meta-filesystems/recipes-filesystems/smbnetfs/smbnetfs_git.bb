@@ -14,6 +14,10 @@ DEPENDS_append_libc-musl = " libexecinfo"
 inherit autotools pkgconfig features_check
 
 # samba depends on libpam
+<<<<<<< HEAD
+=======
+inherit distro_features_check
+>>>>>>> parent of 4c00e5fed... recipes: rename distro_features_check to features_check
 REQUIRED_DISTRO_FEATURES = "pam"
 
 PV = "0.6.1+git${SRCPV}"

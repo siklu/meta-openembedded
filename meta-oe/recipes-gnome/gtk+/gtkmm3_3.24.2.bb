@@ -10,7 +10,7 @@ DEPENDS = "atkmm pangomm glibmm gtk+3 cairomm"
 
 BPN = "gtkmm"
 
-inherit gnomebase features_check
+inherit gnomebase distro_features_check
 
 REQUIRED_DISTRO_FEATURES = "x11"
 

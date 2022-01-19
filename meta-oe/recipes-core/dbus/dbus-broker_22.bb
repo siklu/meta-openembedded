@@ -12,7 +12,7 @@ SRC_URI[sha256sum] = "32f30700cefc997c479d75fcc42f3177940f1ebbee9c5a60c1e3ee39b9
 
 UPSTREAM_CHECK_URI = "https://github.com/bus1/${BPN}/releases"
 
-inherit meson pkgconfig systemd features_check
+inherit meson pkgconfig systemd distro_features_check
 
 DEPENDS = "expat systemd"
 DEPENDS += " ${@bb.utils.contains('DISTRO_FEATURES', 'selinux', 'libselinux', '', d)}"

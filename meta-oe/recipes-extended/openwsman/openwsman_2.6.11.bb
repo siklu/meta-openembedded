@@ -12,7 +12,7 @@ SECTION = "Applications/System"
 
 DEPENDS = "curl libxml2 openssl libpam"
 
-inherit features_check
+inherit distro_features_check
 REQUIRED_DISTRO_FEATURES = "pam"
 
 SRCREV = "d8eba6cb6682b59d84ca1da67a523520b879ade6"

@@ -26,7 +26,11 @@ SRC_URI = "http://download.videolan.org/pub/videolan/${BPN}/${PV}/${BP}.tar.xz \
 SRC_URI[md5sum] = "744442ec0c145453ea1d257914c8072e"
 SRC_URI[sha256sum] = "e0149ef4a20a19b9ecd87309c2d27787ee3f47dfd47c6639644bc1f6fd95bdf6"
 
+<<<<<<< HEAD
 inherit autotools gettext pkgconfig features_check mime-xdg
+=======
+inherit autotools gettext pkgconfig distro_features_check
+>>>>>>> parent of 4c00e5fed... recipes: rename distro_features_check to features_check
 
 ARM_INSTRUCTION_SET = "arm"
 export BUILDCC = "${BUILD_CC}"

@@ -27,7 +27,7 @@ LEAD_SONAME = "libuim.so.1"
 COMPATIBLE_HOST_riscv64 = "null"
 COMPATIBLE_HOST_riscv32 = "null"
 
-inherit features_check autotools pkgconfig gettext qemu gtk-immodules-cache
+inherit distro_features_check autotools pkgconfig gettext qemu gtk-immodules-cache
 
 REQUIRED_DISTRO_FEATURES = "x11"
 

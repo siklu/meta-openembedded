@@ -34,7 +34,7 @@ S = "${WORKDIR}/firefox-${@d.getVar("PV").replace("esr", "")}"
 
 inherit autotools pkgconfig perlnative python3native
 
-inherit features_check
+inherit distro_features_check
 CONFLICT_DISTRO_FEATURES_mipsarchn32 = "ld-is-gold"
 
 DEPENDS += " \

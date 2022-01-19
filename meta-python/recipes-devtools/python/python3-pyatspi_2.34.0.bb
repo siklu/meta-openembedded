@@ -12,7 +12,7 @@ SRCREV = "cc99d68db66174f4499b9b325bc788393b972edd"
 S = "${WORKDIR}/git" 
 
 # Same restriction as gtk+
-inherit features_check
+inherit distro_features_check
 ANY_OF_DISTRO_FEATURES = "${GTK2DISTROFEATURES}"
 
 inherit pkgconfig autotools python3native
